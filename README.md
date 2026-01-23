@@ -17,7 +17,6 @@ Y en versión móvil se debe mostrar así:
 
 ### General
 - Fuente: [Inter](https://fonts.google.com/specimen/Inter)
-- Tamaño h1: `3.5rem`
 - Colores:
 
 | Nombre sugerido | Código de color |
@@ -45,7 +44,7 @@ Y en versión móvil se debe mostrar así:
 
 ---
 
-### Hero Section (en esta web significa todo lo que está debajo del navbar)
+### Parte principal
 
 #### Izquierda
 
@@ -54,7 +53,7 @@ Y en versión móvil se debe mostrar así:
   - Color de texto: `primary-color`
   - Color de fondo: `rgba(255, 90, 60, 0.1)`
 - Título:
-  - Tamaño: `título 1`
+  - Tamaño: `3.5rem`
   - Color oscuro: `dark-color`
   - Color naranja: `primary-color`
   - Negrita: `800`
@@ -65,7 +64,7 @@ Y en versión móvil se debe mostrar así:
   - Tamaño: `1.125rem`
   - Color de texto: `white-color`
   - Color de fondo: `primary-color`
-  - Hover animación:
+  - Hover animado:
     - Se debe mover hacia arriba `2px`.
     - Debe aparecer una sombra con el siguiente código: `0 10px 30px rgba(255, 90, 60, 0.3)`.
   
@@ -75,7 +74,7 @@ Y en versión móvil se debe mostrar así:
   - Tamaño: `1.125rem`
   - Color de texto: `text-color`
   - Color de borde: `#D1D5DB`
-  - Hover animación:
+  - Hover animado:
     - Debe cambiar el color del texto y del borde a `primary-color`.
 
 <img src="./assets/call-to-action-2-hover.png" alt="call-to-action-2-hover" width="200">
@@ -90,6 +89,7 @@ Y en versión móvil se debe mostrar así:
 
 #### Derecha
 
+- Las imágenes tienen sombra: `0 8px 30px rgba(0, 0, 0, 0.12)`
 - Las imágenes las encontrarás en los siguientes enlaces:
   - [Playa1](./assets/photo-beach1.png)
   - [Torre Eiffel](./assets/photo-eiffel-tower.png)
