@@ -17,15 +17,48 @@ Y en versión móvil se debe mostrar así:
 
 ### General
 - Fuente: [Inter](https://fonts.google.com/specimen/Inter)
-- Colores:
+- Colores necesarios:
 
 | Nombre sugerido | Código de color |
 |-----------------|-----------------|
 | primary-color   | `#FF5A3C`       |
+| primary-light-color | `rgba(255, 90, 60, 0.1)` |
 | dark-color      | `#0F0F1A`       |
+| dark2-color     | `#1A1A2E`       |
 | text-color      | `#1F2937`       |
 | white-color     | `#FFFFFF`       |
 | light-color     | `#6B7280`       |
+| light-border-color | `#D1D5DB`    |
+| accent-color    | `#FFB800`       |
+
+### Hovers
+
+Todos los hovers estarán animados y puedes ver los efectos en las siguientes imágenes:
+
+- Links navbar:
+
+<img src="./assets/navbar-hover.png" alt="navbar-hover" width="400">
+
+- Botón navbar:
+
+<img src="./assets/navbar-get-started-hover.png" alt="navbar-get-started-hover" width="400">
+
+- Call to action button *Start planning →*:
+
+<img src="./assets/call-to-action-1-hover.png" alt="call-to-action-1-hover" width="200">
+
+- Call to accion button *Get AI Suggestions*:
+
+<img src="./assets/call-to-action-2-hover.png" alt="call-to-action-2-hover" width="200">
+
+### Imágenes necesarias
+
+Las imágenes las encontrarás en los siguientes enlaces:
+
+- [Playa1](./assets/photo-beach1.png)
+- [Torre Eiffel](./assets/photo-eiffel-tower.png)
+- [Playa2](./assets/photo-beach2.png)
+- [Puente](./assets/photo-bridge.png)
 
 ---
 
