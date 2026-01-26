@@ -6,7 +6,7 @@
 > Se permite IA como apoyo, pero el alumno debe comprender y poder modificar su código.
 > Entregas con patrones de copia o sin autoría demostrable podrán ser invalidadas.
 
-Haz una página web usando **todas** las buenas prácticas que conozcas que muestre lo siguiente:
+Haz una página web usando **todas** las buenas prácticas vistas en classe y que muestre lo siguiente:
 
 <img src="./assets/desktop.png" alt="desktop">
 
