@@ -62,7 +62,7 @@ Todos los hovers estarán animados y puedes ver los efectos en las siguientes im
 
 Las imágenes las encontrarás en los siguientes enlaces:
 
-- [Playa1](./assets/photo-beach1.png)
-- [Torre Eiffel](./assets/photo-eiffel-tower.png)
-- [Playa2](./assets/photo-beach2.png)
-- [Puente](./assets/photo-bridge.png)
+- [Playa1](./assets/photo-beach1.jpeg)
+- [Torre Eiffel](./assets/photo-eiffel-tower.jpeg)
+- [Playa2](./assets/photo-beach2.jpeg)
+- [Puente](./assets/photo-bridge.jpeg)
