@@ -1,0 +1,224 @@
+/*
+    He escogido hacer el CSS Mobile First porque es más fácil para diseñar considerando el botón del hamburger menu de la
+    navbar de los dispositivos móviles.
+*/
+
+:root {
+    --font: 'Inter', sans-serif;
+    --primary-colour: #FF5A3C;
+    --primary-light-colour: rgba(255, 90, 60, 0.1);
+    --dark-colour: #0F0F1A;
+    --dark2-colour: #1A1A2E;
+    --text-colour: #1F2937;
+    --white-colour: #FFFFFF;
+    --light-colour: #6b7280;
+    --light-border-colour: #D1D5DB;
+    --accent-colour: #FFB800;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--white-colour);
+}
+
+strong {
+    color: var(--primary-colour);
+}
+
+#images {
+    display: none;
+}
+.desktop {
+    display: none;
+}
+
+
+.mobile {
+    z-index: 11;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.icono {
+    margin: 0 1em;
+    min-height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.icono label {
+    cursor: pointer;
+}
+
+.icono label::before {
+    content: "\2630";
+    font-size: 1.5em;
+    display: block;
+}
+
+#hamb-menu {
+    visibility: hidden;
+}
+
+.items {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: max-height 0.5s ease-in-out;
+    z-index: 10;
+    background-color: white;
+}
+
+#hamb-menu:checked ~ .items {
+    max-height: 500px;
+}
+
+.items span {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.items a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.items a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+main {
+    margin: 0 auto;
+    color: var(--text-colour);
+}
+
+.main-menu-card {
+    position: relative;
+    margin: 2em 1em;
+    padding: 2em 1em 0 1em;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+.main-menu-card::before {
+    content: "Explore the World with Us";
+    display: block;
+    text-align: center;
+    position: relative;
+    bottom: 2em;
+    color: var(--primary-colour);
+    background-color: var(--primary-light-colour);
+    border-radius: 1.2em;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.5em 1em;
+    font-weight: 600;
+}
+
+.main-menu-description {
+    color: var(--light-colour);
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+#start-planning {
+    background-color: var(--primary-colour);
+    padding: 0.8em 1.5em;
+    border-radius: 0.5em;
+    font-weight: 600;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    min-width: 80%;
+}
+
+#start-planning a {
+    color: var(--white-colour);
+}
+
+#start-planning:hover {
+    box-shadow: 0 0.5em 1em var(--primary-light-colour);
+    transition: 0.5s;
+}
+
+#ai-slop-suggestions {
+    border: 2px solid var(--light-border-colour);
+    padding: 0.8em 1.5em;
+    border-radius: 0.5em;
+    font-weight: 600;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    min-width: 80%;
+}
+
+#ai-slop-suggestions a {
+    color: var(--text-colour);
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin: 2em 1em;
+}
+
+#info p {
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+#info p::after {
+    display: block;
+    font-weight: 400;
+    color: var(--light-colour);
+    position: relative;
+    top: 0.5em;
+    font-size: 0.5em;
+}
+
+#info p:first-child::after {
+    content:"Destinations";
+    
+}
+
+#info p:nth-child(2)::after {
+    content:"Privacy";
+}
+
+#info p:nth-child(3)::after {
+    content:"AI Support";
+}
+
+.orange {
+    color: var(--primary-colour);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--light-border-colour);
+    margin: 2em 1em;
+}
