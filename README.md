@@ -1,5 +1,7 @@
 # Examen 1 - Parte 2
 
+[También lo tengo subido en un repo de GitHub.](https://github.com/Marco-Poelsma/examen_final_web_html)
+
 > [!IMPORTANT]
 > Es imprescindible aprobar la parte 1 para que esta parte 2 sea evaluada.
 >

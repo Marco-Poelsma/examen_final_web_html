@@ -28,29 +28,40 @@ strong {
 #images {
     display: none;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+header h1 {
+    margin: 0;
+}
+
 .desktop {
     display: none;
 }
 
-
 .mobile {
     z-index: 11;
-    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    position: relative;
 }
 
 .icono {
-    margin: 0 1em;
     min-height: 4em;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     font-weight: 600;
 }
 
 .icono label {
     cursor: pointer;
+    padding: 0.5em;
 }
 
 .icono label::before {
@@ -60,11 +71,14 @@ strong {
 }
 
 #hamb-menu {
-    visibility: hidden;
+    display: none;
 }
 
 .items {
-    width: 100%;
+    position: absolute;
+    top: 4em;
+    right: 0;
+    width: 100vw;
     max-height: 0;
     overflow: hidden;
     display: flex;
@@ -73,6 +87,7 @@ strong {
     transition: max-height 0.5s ease-in-out;
     z-index: 10;
     background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #hamb-menu:checked ~ .items {
@@ -221,4 +236,67 @@ hr {
     border: none;
     border-top: 1px solid var(--light-border-colour);
     margin: 2em 1em;
+}
+
+
+@media screen and (min-width: 900px) {
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2em;
+    }
+    .desktop a {
+        text-decoration: none;
+        color: var(--text-colour);
+        font-weight: 600;
+    }
+
+    .desktop a:hover {
+        color: var(--primary-colour);
+        transition: 0.25s;
+    }
+
+    
+    main {
+        display: grid;
+        grid-template-areas: "main-card images"
+        "buttons images"
+        "info images";
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2em;
+        row-gap: 1em;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #images {
+        display: block;
+        grid-area: images;
+    }
+    #images img {
+        width: 70%;
+        border-radius: 1em;
+    }
+
+    #main-info-card {
+        grid-area: main-card;
+    }
+
+    .buttons {
+        flex-direction: row;
+        justify-content: flex-start;
+        grid-area: buttons;
+        max-height: 3.5em;
+    }
+    #info {
+        grid-area: info;
+    }
+
+
 }
